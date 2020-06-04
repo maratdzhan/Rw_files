@@ -1,0 +1,19 @@
+This program using for reading and writing from files.
+Assumed, that input file has only one "word" at the string, but they're no problem, because iterators, used for reading, is split string to some substring.
+Also, the program has some features:
+1) the programme can remove substring for the string. For that purpose used "hook"-chars. Example string:
+asd.fghjk.l
+can be handled with hook-char "." so that it seems like:
+asdl
+2) Removing strings with non-digits symbols. All the above will be removed while handling this function, except this:
+1234567890
+3) Removing strings having N vowels. String
+qwerty
+will no be handled, but the string
+qwertyu
+wiil be removed.
+4) Coping strings array to another template-container with replacing symbols imitating "trim" function: with removing first and last symbols. If the string has 2 symbols or less, the programme will copy the empty string. String like:
+qwerty
+will be transformed this way:
+wert
+and saved to the new container.
